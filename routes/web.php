@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('welcome', 'AdminController@showAdminsEvent');
+Route::get('/', 'AdminController@showAdminsEvent');
 
 Route::post('welcome', 'AdminController@postAdminsEvent');
 

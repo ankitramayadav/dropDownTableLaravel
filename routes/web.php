@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('welcome', 'AdminController@showAdminsEvent');
+
+Route::post('welcome', 'AdminController@postAdminsEvent');
+
+Route::get('adminStudentDetails', 'AdminController@showAdminStudentDetails');
